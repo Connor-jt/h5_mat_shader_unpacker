@@ -114,6 +114,7 @@ int main()
         for (int b = 0; b < bytecode_resource->compute_shaders_bytecode_.count; b++)
             handle_compiled_shader_block(&bytecode_resource->compute_shaders_bytecode_[b]->base_compiled_shader, filename, "compute_shader", b);
 
+        delete[] cleanup_ptr;
     }
 
 
